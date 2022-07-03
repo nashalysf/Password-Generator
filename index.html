@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!--container-->
+    <div class="wrapper">
+        <header class="password-generator">
+            <h1>Password Generator</h1>
+        </header>
+
+        <form class="cardBox">
+            <!--password-generator-->
+            <div class="card-header">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea readonly id="passwordBox" placeholder="Your Secure Password"
+                    aria-label="Generated Password"></textarea>
+            </div>
+            <section class="password-details">
+                <div>
+                    <label for="length">Number of Characters</label>
+                    <input type="number" id="length" min="8" max="128" value="8">
+                </div>
+
+                <div>
+                    <label for="symbol">Include Symbol</label>
+                    <input type="checkbox" id="symbol" checked>
+                </div>
+                <div>
+                    <label for="number">Include Number</label>
+                    <input type="checkbox" id="number" checked>
+                </div>
+                <div>
+                    <label for="lowerCase">Include Lowercase</label>
+                    <input type="checkbox" id="lowerCase" checked>
+                </div>
+                <div>
+                    <label for="upperCase">Include Uppercase</label>
+                    <input type="checkbox" id="upperCase" checked>
+                </div>
+                <button type=button onclick="createPassword()" class="btn">Generate Password</button>
+        </form>
+        </section>
+    </div>
+    <div class="card-footer"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
