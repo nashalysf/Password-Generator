@@ -2,9 +2,9 @@
 A random-password generator to practice and control JavaScript.
 
 ## Made with:
-* A given html;
-* A given css;
-* JavaScript;
+* A given html
+* A given css
+* JavaScript
 
 ## Purpose and Features:
 * The purpose of this code is to practice and understand js in order to control it and define its behavior.
